@@ -1,0 +1,420 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
+ font-family: "Lato", sans-serif; */
+@font-face {
+  font-family: "poppins";
+  src: url("asstes/fonts/poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "inter";
+  src: url("asstes/fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+ font-family: "poppins";
+} */
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px 0;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(145, 121, 254, 0.5);
+}
+.header {
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col15 {
+  max-width: 15%;
+  flex: 0 0 15%;
+  padding: 0 15px;
+}
+
+.col30 {
+  max-width: 30%;
+  flex: 0 0 30%;
+  padding: 0 15px;
+}
+
+.col40 {
+  max-width: 40%;
+  flex: 0 0 40%;
+  padding: 0 15px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo img {
+  width: 217px;
+  height: 60px;
+}
+
+/* Menu */
+.navlinks {
+  display: flex;
+  gap: 27px;
+  list-style: none;
+}
+
+.navlinks li a {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #424242;
+}
+
+.navlinks li a:hover {
+  color: #7a4df3;
+}
+
+/* Right Side */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Button */
+.cmn-btn {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #9179fe;
+  transition: 0.3s;
+}
+
+.cmn-btn:hover {
+  color: #cf7fdb;
+}
+
+/* Icons */
+.icon a:hover {
+  color: #5e00f6;
+}
+.cart {
+  width: 30px;
+  height: 30px;
+}
+.status {
+  width: 27px;
+  height: 27px;
+}
+/* ===== BANNER SECTION ===== */
+.page-banner {
+  width: 100%;
+  padding: 90px 0;
+  margin-top: 90px;
+  background: linear-gradient(90deg, #c6bafb 0%, #e6dcf3 50%, #e8c8f0 100%);
+}
+
+.page-banner .container {
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-family: "poppins";
+  font-size: 62px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.page-banner p {
+  font-family: "poppins";
+  font-size: 20px;
+  color: #fff;
+}
+/* ===== LOGIN SECTION ===== */
+.login-section {
+  padding-top: 108px;
+  font-family: "poppins";
+}
+
+/* wrapper */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* image */
+.login-image img {
+  width: 782px;
+  height: 532px;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+}
+
+/* form card */
+.login-form {
+  width: 532px;
+  height: 532px;
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+  background: #fff;
+  box-shadow:
+    0 20px 30px rgba(207, 127, 219, 0.078),
+    -0 -20px 30px rgba(207, 127, 219, 0.078);
+}
+
+.login-form h3 {
+  font-family: "poppins";
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.32;
+}
+
+/* inputs */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-email label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-email span {
+  color: red;
+}
+
+.form-email input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #f5e5ff;
+  outline: none;
+}
+
+.form-password label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-password span {
+  color: red;
+}
+
+.form-password input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #f5e5ff;
+  outline: none;
+  margin-bottom: 30px;
+}
+/* .form-group input:focus {
+  border-color: #a77bff;
+} */
+
+/* button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #955aa4;
+  background: transparent;
+  color: #050505;
+  font-weight: 500;
+  /* cursor: pointer; */
+  font-family: "Lato", sans-serif;
+}
+
+.login-btn:hover {
+  background: #a77bff;
+  color: #fff;
+}
+
+/* text */
+.or-text {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 13px;
+  color: #777;
+}
+
+.signup-text {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.signup-text a {
+  color: #7a4cff;
+}
+
+.signup-text a:hover {
+  color: #cf7fdb;
+}
+.terms {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333333;
+  max-width: 259px;
+  margin-left: 115px;
+}
+
+.terms a:hover {
+  color: #333333;
+}
+.terms a:hover {
+  color: #7a4cff;
+}
+
+.footer {
+  background: #424242;
+  padding: 70px 0 25px;
+  margin-top: 120px;
+  color: #fff;
+  font-family: "inter";
+}
+
+/* .footer .row{
+align-items:flex-start;
+} */
+
+/* left contact */
+.footer-location {
+  margin-right: 61px;
+}
+.footer-information {
+  margin-right: 61px;
+}
+.footer-support {
+  margin-right: 100px;
+}
+.footer-location ul li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 19px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* middle menus */
+
+.footer-information ul li:first-child,
+.footer-support ul li:first-child {
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.footer-information ul li,
+.footer-support ul li {
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.footer-information ul li a,
+.footer-support ul li a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer-information ul li a:hover,
+.footer-support ul li a:hover {
+  color: #9179fe;
+}
+
+/* right signup */
+
+.footer-sing p:first-child {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.footer-sing form {
+  display: flex;
+  margin-bottom: 25px;
+}
+.newsletter-text {
+  max-width: 350px;
+  color: #fff;
+}
+.footer-sing input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+.email-address {
+  max-width: 600px;
+  height: 39px;
+}
+.footer-sing button {
+  width: 107px;
+  height: 39px;
+  border: 2px solid white;
+  background: #4e4c4c;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  /* cursor:pointer; */
+}
+
+.footer-sing button:hover {
+  background: #9179fe;
+}
+
+.newsletter-text {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* bottom copyright */
+
+.footer-bottom {
+  width: 100%;
+  margin-top: 48px;
+  padding-top: 25px;
+  border-top: 1px solid #ffffff;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+
